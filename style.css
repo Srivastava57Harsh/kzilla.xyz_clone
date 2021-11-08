@@ -1,0 +1,109 @@
+* {
+    font-family: 'Cascadia Code';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    height: 20vh;
+  }
+  
+  .logo img {
+    height: 10vh;
+    min-height: 60px;
+    margin-left: 5vh;
+    margin-top: 5vh;
+  }
+
+  .logo:hover {
+    opacity :0.4; 
+  }
+  
+  .text {
+    font-size: 8vh;
+    padding-left: 8vw;
+    margin-top: 3vh;
+  }
+  
+
+  .greenline::before{
+    position: absolute;
+    content:" ";
+    width: 4em;
+    height: .3em;
+    background: #24b446;
+    z-index :-1 ; 
+    margin-top: 0.8em;
+    margin-left: 1em;
+    
+  }
+  
+  .content:before{
+      content:'';
+      animation: animate infinite 10s;
+  }
+  
+  @keyframes animate{
+    0%{
+        content:' snappy';
+    }
+    20%{
+        content:' breezy';
+    }
+    40%{
+        content:' blazing fast';
+    }
+    50%{
+        content:'n unbelievable';
+    }
+    80%{
+        content:' fast';
+    }
+    100%{
+        content:'n uninterrupted';
+    }
+  }
+
+  .input {
+    margin-top: 6rem;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input input,
+  .input button {
+    border: 0;
+    font-size: 3vh;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+  
+  .input input {
+    background-color: #e7e7e7;
+    width: 70vw;
+  }
+  
+  .input button {
+    min-width: 12vw;
+    height: 8vh;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-size: 2vh;
+    margin: 0.5rem;
+  }
+  
+  .input button:hover {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 700px) {
+    .text {
+      font-size: 12vw;
+    }
+    .input {
+      flex-wrap: wrap;
+    }
+  }
